@@ -11,7 +11,7 @@ const routes = [
   { path: '/', name: 'Home', component: Home },
   { path: '/animals', name: 'AnimalsList', component: AnimalsList },
   { path: '/animals/:documentId', name: 'AnimalDetail', component: AnimalDetail },
-  { path: '/adopt/:id', name: 'AdoptionForm', component: AdoptionForm },
+  { path: '/adopt/:documentId', name: 'AdoptionForm', component: AdoptionForm },
   { path: '/shelters', name: 'Shelters', component: Shelters }
 ]
 

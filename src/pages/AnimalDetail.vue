@@ -1,12 +1,8 @@
 <template>
   <div v-if="animal" class="max-w-4xl mx-auto px-4 py-8">
     <div class="bg-white shadow-md rounded-xl overflow-hidden">
-      <img
-        v-if="animal.photo?.url"
-        :src="getImageUrl(animal.photo)"
-        alt="photo de l'animal"
-        class="w-full h-72 object-cover"
-      />
+      <img v-if="animal.photo?.url" :src="getImageUrl(animal.photo)" alt="photo de l'animal"
+        class="w-full h-72 object-cover" />
       <div class="p-6">
         <h1 class="text-3xl font-bold mb-2 text-blue-600">{{ animal.name }}</h1>
         <p class="text-gray-700 mb-4 italic">{{ animal.description }}</p>
@@ -18,12 +14,11 @@
           <div><strong>Type :</strong> {{ animal.type?.name }}</div>
           <div><strong>Refuge :</strong> {{ animal.shelter?.name }}</div>
         </div>
-        <router-link
-          :to="`/adopt/${animal.id}`"
-          class="inline-block mt-6 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
-        >
+        <router-link :to="`/adopt/${animal.documentId}`"
+          class="inline-block mt-6 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
           Adopter {{ animal.name }}
         </router-link>
+
       </div>
     </div>
   </div>
