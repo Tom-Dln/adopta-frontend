@@ -6,7 +6,6 @@
         <router-link to="/" class="hover:text-blue-500">Accueil</router-link>
         <router-link to="/animals" class="hover:text-blue-500">Animaux</router-link>
         <router-link to="/shelters" class="hover:text-blue-500">Refuges</router-link>
-        <router-link to="/adopt/1" class="hover:text-blue-500">Adopter</router-link>
       </div>
     </div>
   </nav>
